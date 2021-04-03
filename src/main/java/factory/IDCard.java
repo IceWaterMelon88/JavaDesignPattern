@@ -11,4 +11,10 @@ public class IDCard implements Product{
     public void use() {
         System.out.println(owner + "'s Use the owner's ID card.");
     }
+
+    public static class Factory{
+        public static IDCard create(String owner){
+            return new IDCard(owner);
+        }
+    }
 }

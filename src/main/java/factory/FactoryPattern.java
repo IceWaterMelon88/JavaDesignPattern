@@ -12,5 +12,13 @@ public class FactoryPattern {
         idCard1.use();
         idCard2.use();
         idCard3.use();
+
+        Product idCard4 = IDCard.Factory.create("Park");
+        Product idCard5 = IDCard.Factory.create("Watermelon");
+        Product idCard6 = IDCard.Factory.create("Ice");
+        idCard4.use();
+        idCard5.use();
+        idCard6.use();
+
     }
 }
